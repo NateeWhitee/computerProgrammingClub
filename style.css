@@ -14,29 +14,27 @@ body {
 }
 
 header {
-    height: 77px;
+    height: 75px;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 header h1 {
-    width: 79.5%;
-    float: right;
-    margin: 0;
+    width: 80%;
+    margin: 0 0 0 20%;
     text-align: center;
     font-size: 24px;
     padding: 25px 0 25px 0;
     background-color: #333333;
     color: #ffffff;
     outline: 5px #ffd700 solid;
-    outline-offset: -10px;
+    outline-offset: -5px;
 }
 
 header nav {
     width: 20%;
-    float: left;
-    position: absolute;
+    position: fixed;
 }
 
 header nav button {
@@ -182,18 +180,12 @@ footer {
         margin: 0;
     }
 
-    header {
-        height: 154px;
-    }
-
     header h1 {
-        width: 100%;
-        float: none;
+        display: none;
     }
 
     header nav {
         width: 100%;
-        float: none;
     }
 
     header button {
@@ -212,19 +204,14 @@ footer {
         margin: 0;
     }
 
-    header {
-        height: 175px;
-    }
-
     header h1 {
         width: 100%;
-        float: none;
         outline: none;
     }
 
     header nav {
         width: 100%;
-        float: none;
+        position: relative;
     }
 
     header nav button {
