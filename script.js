@@ -1,4 +1,5 @@
 let menuToggle = 2;
+
 function dropMenuDown() {
     if (menuToggle % 2 === 0) {
         document.getElementById('menu').style.display = 'block';

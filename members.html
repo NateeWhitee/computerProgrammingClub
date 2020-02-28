@@ -13,33 +13,30 @@
                 <ul id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="studentProjects.html">Student Projects</a></li>
-                    <li><a class='active' href="members.html">Members</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="howToJoin.html">How To Join</a></li>
+                    <li><a class='active' href="members.html">Members Only</a></li>
                 </ul>
             </nav>
         </header>
 
-        <article>
+        <article id="passwordBox">
             <div class="container">
-                <h1>Lorem Ipsum</h1>
-                <img src='stock.jpg'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis metus ut lectus iaculis interdum. Aliquam facilisis, tellus nec maximus finibus, est velit tincidunt diam, non eleifend odio mi eget lacus. Ut gravida mi vitae elit euismod rutrum. Cras fringilla et ligula iaculis scelerisque. Vivamus commodo in ligula a sagittis. Donec odio orci, tempor ut nisl vitae, pellentesque lacinia orci. Pellentesque risus magna, condimentum et augue sit amet, porttitor tincidunt sapien. Aliquam volutpat ipsum id aliquam tincidunt. Phasellus mauris orci, feugiat non viverra eu, bibendum sed libero. Morbi et neque dui. Etiam varius porttitor finibus.</p>
-            </div>
-        </article>
-
-        <article>
-            <div class="container">
-                <h1>Lorem Ipsum</h1>
-                <img src='stock.jpg'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis metus ut lectus iaculis interdum. Aliquam facilisis, tellus nec maximus finibus, est velit tincidunt diam, non eleifend odio mi eget lacus. Ut gravida mi vitae elit euismod rutrum. Cras fringilla et ligula iaculis scelerisque. Vivamus commodo in ligula a sagittis. Donec odio orci, tempor ut nisl vitae, pellentesque lacinia orci. Pellentesque risus magna, condimentum et augue sit amet, porttitor tincidunt sapien. Aliquam volutpat ipsum id aliquam tincidunt. Phasellus mauris orci, feugiat non viverra eu, bibendum sed libero. Morbi et neque dui. Etiam varius porttitor finibus.</p>
+                <h1>Password Necessary</h1>
+                <div id="passwordContainer">
+                    <input placeholder="Enter Password Here" onclick="ael()" type="password" id="pw">
+                    <button onclick="getAccess()">Confirm Password</button>
+                </div>
+                <button onclick="unhidePW()" id="showPWButton">Show Password</button>
+                <div id="incorrect"></div>
             </div>
         </article>
 
         <footer>
-            <h1>Members</h1>
+            <h1>Members Only</h1>
         </footer>
 
+        <script src="pw.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

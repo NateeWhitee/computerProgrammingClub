@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
 }
 
 .container {
@@ -121,6 +122,47 @@ article img {
     border-radius: 25px;
 }
 
+#hidden {
+    display: none;
+}
+
+ #passwordBox .container #passwordContainer {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+ #passwordBox .container #passwordContainer #pw {
+    width: 45%;
+    border: none;
+    line-height: 1.5;
+    font-size: 24px;
+    padding: 10px 0 10px 0;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+}
+
+ #passwordBox .container #passwordContainer button {
+    float: right;
+}
+
+ #passwordBox button {
+    width: 45%;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    border: none;
+    font-size: 24px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+}
+
+#passwordBox button:hover {
+    background-color: #555555;
+    transition-duration: .3s;
+}
+
 footer {
     bottom: 0;
     right: 0;
@@ -141,7 +183,7 @@ footer {
     }
 
     header {
-        height: 154.5px;
+        height: 154px;
     }
 
     header h1 {
@@ -157,6 +199,10 @@ footer {
     header button {
         margin: 0 0 25px 0;
         width: 100%;
+    }
+
+    #passwordBox.container #passwordContainer #pw, #passwordBoxbutton {
+        width: 50%;
     }
 }
 
@@ -209,6 +255,26 @@ footer {
 
     article img {
         display: none;
+    }
+
+    #passwordBoxh1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #passwordBox #passwordContainer {
+        width: 100%;
+    }
+
+    #passwordBox .container #passwordContainer #pw {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #passwordBox button {
+        width: 100%;
+        font-size: 18px;
+        float: none;
     }
 
     footer {
